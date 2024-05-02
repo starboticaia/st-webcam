@@ -2,4 +2,5 @@ import streamlit as st
 
 foto = st.camera_input("Foto")
 st.divider()
-st.image(foto)
+if foto is not None:
+  st.image(foto)
